@@ -1,0 +1,14 @@
+.person {
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 0 20px;
+    color: black;
+}
+
+.bg-pink {
+    background-color: pink;
+}
+
+.bg-green {
+    background-color: green;
+}
