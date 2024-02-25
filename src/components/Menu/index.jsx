@@ -13,6 +13,9 @@ const Menu = () => {
       <Link className="button" to="/person">
         Person
       </Link>
+      <Link className="button" to="/todo-list">
+        TodoList
+      </Link>
     </div>
   );
 };

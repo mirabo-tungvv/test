@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import PersonPage from "../pages/PersonPage";
 import HomePage from "../pages/HomePage";
+import TodoPage from "../pages/TodoPage";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/person",
         element: <PersonPage />,
+      },
+      {
+        path: "/todo-list",
+        element: <TodoPage />,
       },
     ],
   },

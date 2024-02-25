@@ -1,0 +1,68 @@
+.todo-form {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-field {
+    position: relative;
+    flex-grow: 1;
+}
+
+.text-field label {
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-color: white;
+    padding: 1px 5px;
+    font-size: 12px;
+    transform: translateY(-50%);
+    color: #6a5af9;
+}
+
+.text-field input {
+    padding: 15px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #6a5af9;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+}
+
+.button {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 4px;
+    background-color: black;
+    cursor: pointer;
+    font-weight: 500;
+    outline: none;
+    border: 1px solid black;
+    font-size: 16px;
+    position: relative;
+    isolation: isolate;
+}
+
+.button:before {
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: -1;
+    transition: width 0.25s ease-in;
+}
+
+.button:hover:before {
+    width: 100%;
+}
